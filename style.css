@@ -1,6 +1,6 @@
 .navbar-default{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 20px;
 }
 .navbar-brand2{
     font-size: 20px;
@@ -114,4 +114,13 @@ img {
     padding: 10px;
     background-color: black;
     color: white;
+}
+.button {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    padding: 2%;
+}
+.button_link {
+    color: white;
+    text-decoration: underline;
 }
