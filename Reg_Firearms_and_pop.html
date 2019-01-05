@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Latest compiled and minified JavaScript -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   
+    <title>Gun Violence - Registered Firearms & Population</title>
+</head>
+<body class="background">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand2" href="index.html"><i class="glyphicon glyphicon-screenshot"></i> Gun Violence Analysis</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+              </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Analysis <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="interactive_map.html">Interactive Map</a></li>
+                  <li><a href="Reg_Firearms_and_pop.html">Gun Violence - Gun Ownership & Population</a></li>
+                  <li><a href="type_of_inc_analysis.html">Incident Type Analysis</a></li>
+                  <li><a href="wind_speed.html">Enter new analysis topic here</a></li>
+                </ul>
+                <li><a href="data.html">Resources</a></li>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+            <div class = "container">
+                <div class="row">
+                    <div class="col-md-14 analysis">
+                        <div class="panel panel-default">
+                            <div class="panel-body_h">
+                            <h1>Gun Violence - Gun Ownership & Population</h1>
+                            <h4>The below analysis is an in depth look at the correlation between state population, estimated gun ownership per capita and gun violence incidents. This analysis focuses only on 2017 data.</h4> 
+                            <hr>
+                            <img class = "img-fluid analysis_img" src="Data/line_graph.png"  style="width:100%"  alt="Population, Registered Firearms and Gun Violence by State">
+                            <p>Statistics on gun ownership across the U.S. are hard to nail down; the ATF's National Firearms Registration and Transfer Record is not all-inclusive, and some guns go unregistered.  
+
+                                But "Injury Prevention," a scholarly journal, has released what may be the closest look yet. Their survey, published in 2015, asked a representative sample of 4,000 adults nationwide whether they own firearms. The findings helped the research group estimate gun ownership rates in each state.</p> 
+                            <div class = "map_border">
+                                <div>
+                                    <a href="https://plot.ly/~jmlegge/80/?share_key=EbG2LVz4ySrwCD12vaXTDB" target="_blank" title="plotly_map" style="display: block; text-align: center;"><img src="https://plot.ly/~jmlegge/80.png?share_key=EbG2LVz4ySrwCD12vaXTDB" alt="plotly_map" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+                                    <script data-plotly="jmlegge:80" sharekey-plotly="EbG2LVz4ySrwCD12vaXTDB" src="https://plot.ly/embed.js" async></script>
+                                </div>
+                                <p class = "note">The below bar graph shows the difference between NFA registered firearm data per state and the estimated number of gun owners per state.</p>
+                                <div>
+                                    <a href="https://plot.ly/~jmlegge/84/?share_key=2Evijj2g4G6LtJhZtLLVBu" target="_blank" title="grouped-bar" style="display: block; text-align: center;"><img src="https://plot.ly/~jmlegge/84.png?share_key=2Evijj2g4G6LtJhZtLLVBu" alt="grouped-bar" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+                                    <script data-plotly="jmlegge:84" sharekey-plotly="2Evijj2g4G6LtJhZtLLVBu" src="https://plot.ly/embed.js" async></script>
+                                </div>                                 
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-footer-bar"></div>
+                        <div class="panel-footer">© Mike Schuler, Sam Wood, Nolan Hatch & Jennifer Clarke 2018</div>
+                    </div>
+                </div>
+            </div>                      
+</body>
+</html>

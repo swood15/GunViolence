@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Latest compiled and minified JavaScript -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   
+    <title>Gun Violence Dashboard</title>
+</head>
+<body class="background">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand2" href="index.html"><i class="glyphicon glyphicon-screenshot"></i> Gun Violence Analysis</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+              </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Analysis <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="interactive_map.html">Interactive Map</a></li>
+                    <li><a href="Reg_Firearms_and_pop.html">Gun Violence - Gun Ownership & Population</a></li>
+                    <li><a href="type_of_inc_analysis.html">Incident Type Analysis</a></li>
+                  <li><a href="wind_speed.html">Enter new analysis topic here</a></li>
+                </ul>
+                <li><a href="data.html">Resources</a></li>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+            <div class = "container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="panel panel-default">
+                            <div class="panel-body_h">
+                            <h1>Gun Violence in the US</h1>
+                            <h4>Enter description of the project here</h4> 
+                            <div class= "map_border">
+                                    <div class='tableauPlaceholder' id='viz1546662901597' style='position: relative'><noscript><a href='http:&#47;&#47;localhost:8000&#47;GunViolence&#47;index.html'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B5&#47;B57Z6Y6GH&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;B57Z6Y6GH' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B5&#47;B57Z6Y6GH&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1546662901597');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                            </div>
+                            <!-- <img class = "img-fluid analysis_img" src="Resources/map_place_saver.png" style="width:100%" alt="spot holder">      -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+                          <div class="panel-body">                                    
+                              <h2>Analysis</h2>
+                              <hr>
+                              <div class="row">
+                                <a href="interactive_map.html"><img class = "img-fluid" src="Resources\interactive_map.png" style="width:100%" alt="interactive map link"></a>
+                              </div>
+                              <br>
+                              <div class="row ">
+                                <a href="Reg_Firearms_and_pop.html"><img class = "img-fluid" src="Resources\line_graph.png" style="width:100%" alt="line graph link"></a>
+                              </div>
+                              <div class="row">
+                                  <br>
+                                  <a href="type_of_inc_analysis.html"><img class = "img-fluid" src="Resources\gun_violence_analysis.png" style="width:100%" alt="Cloudindess"></a>
+                              </div>
+                              <div class="row">
+                                  <br>
+                                  <a href="wind_speed.html"><img class = "img-fluid" src="Resources\hold_spot.png" style="width:100%" alt="wind speed"></a>
+                              </div>
+                          </div>
+                        </div>
+                    <div class="panel panel-default">
+                        <div class="panel-footer-bar"></div>
+                        <div class="panel-footer">© Mike Schuler, Sam Wood, Nolan Hatch & Jennifer Clarke 2018</div>
+                        </div>
+                        
+</body>
+</html>
